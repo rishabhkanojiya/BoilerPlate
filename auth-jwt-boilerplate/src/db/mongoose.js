@@ -1,0 +1,8 @@
+const mongoose = require("mongoose");
+
+mongoose.connect("mongodb://localhost/task-manager", {
+  useNewUrlParser: true,
+  useCreateIndex: true,
+  useUnifiedTopology: true,
+  useFindAndModify: false
+});
